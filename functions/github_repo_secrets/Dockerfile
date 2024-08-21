@@ -1,6 +1,6 @@
-FROM amazon/aws-lambda-python:latest
+FROM amazonlinux:2
 
-# Install required packages using 'yum' for the correct base image
+# Install Python, GCC, and other dependencies
 RUN yum install -y python3 python3-devel gcc && \
     yum clean all
 
